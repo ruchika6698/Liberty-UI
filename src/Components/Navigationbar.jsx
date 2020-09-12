@@ -1,6 +1,5 @@
 import React from "react";
 import "../SCSS/Navigationbar.scss";
-import Button from "react-bootstrap/Button";
 import LibertyIcon from "./../Assets/LibertyIcon.svg";
 import UserIcon from "./../Assets/UserIcon.jpg";
 import {
@@ -8,8 +7,6 @@ import {
   Row,
   Col,
   NavbarBrand,
-  Badge,
-  Image,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faTv } from "@fortawesome/free-solid-svg-icons";
@@ -27,6 +24,7 @@ export default function Navigationbar() {
                 <img
                   className="logo"
                   src={LibertyIcon}
+                  alt="logo"
                 />
           </NavbarBrand>
         </Col>
@@ -46,6 +44,7 @@ export default function Navigationbar() {
               </div>
               <div className="account">
                 <img src={UserIcon} height="37px" className="avatar" alt="User" />
+
               </div>
             </Col>
         </Row>
