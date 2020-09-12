@@ -1,0 +1,85 @@
+@mixin flex() {
+	display:flex;
+    flex-direction:row;
+}
+.Navigationbar{
+    margin-top:1.2%;
+    padding-left:15%;
+    padding-right:15%;
+}
+.logoBar{
+    @include flex();
+    .logo{
+        height:30px;
+        width:160px;
+    }
+}
+.logoBar-icons{
+    @include flex();
+    padding-left:55%;
+    .search{
+        padding-top:7px;
+        padding-right:20px;
+        background-color:#F9F9FC;
+        border-radius:50px;
+    }
+    .searchIcon{
+        padding-left:20px;
+        padding-right:20px;
+        opacity:0.6;
+    }
+    .searchInput{
+        border: none;
+        background-color:#F9F9FC;
+        outline: 0;
+    }
+    .notification{
+        padding-left:20px;
+        padding-right:20px;
+        cursor: pointer;
+    }
+    .notificationCount{
+        padding:0px 5px 0px 5px; 
+        font-size:12px;
+        margin-left:7px;
+        color:white;
+        background-color:#FF6F59;
+        border-radius:50px;
+    }
+    .bellIcon{
+        font-size:20px;
+    }
+    .avatar{
+        border-radius:50px;
+    }
+}
+.menu{
+    @include flex();
+    max-width:1500px;
+    .dashboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #734ef9;
+        padding: 15px 10px;
+        cursor: pointer;
+        color: white;
+        font-weight:bold;
+        width:176.66px;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F9F9FC;
+        font-weight:bold;
+        padding: 15px 10px;
+        cursor: pointer;
+        width:176.66px;
+
+        &-icon {
+            color: white;
+            margin-right: 10px;
+        }
+    }
+}
