@@ -2,10 +2,21 @@
 	display:flex;
     flex-direction:row;
 }
+@mixin header() {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-weight:bold;
+    width:190px;
+}
+
 .Navigationbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     margin-top:1.2%;
-    padding-left:15%;
-    padding-right:15%;
 }
 .logoBar{
     @include flex();
@@ -16,7 +27,7 @@
 }
 .logoBar-icons{
     @include flex();
-    padding-left:55%;
+    padding-left:60%;
     .search{
         padding-top:7px;
         padding-right:20px;
@@ -57,29 +68,24 @@
     @include flex();
     max-width:1500px;
     .dashboard{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include header();
         background-color: #734ef9;
-        padding: 15px 10px;
-        cursor: pointer;
         color: white;
-        font-weight:bold;
-        width:176.66px;
     }
     &-item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include header();
         background-color: #F9F9FC;
-        font-weight:bold;
-        padding: 15px 10px;
-        cursor: pointer;
-        width:176.66px;
 
         &-icon {
             color: white;
             margin-right: 10px;
         }
+    }
+    &-item:hover{
+        background-color:#F2F2F9;
+    }
+    .menuIcon{
+        color: #564DE4;
+        margin-right: 10px;
     }
 }

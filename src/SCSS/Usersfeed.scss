@@ -1,9 +1,9 @@
 .userfeed{
     display: flex;
     flex-direction:row;
+    align-items:center;
+    justify-content:center;
     padding-top:1.5%;
-    padding-left:15%;
-    padding-right:15%;
 
     .feedColumn{
         display: flex;
@@ -11,7 +11,7 @@
         align-items: center;
         justify-content:center;
         background-color:white;
-        width:295px;
+        width:313px;
         height:130px;
         border: 1px solid #D5DCEC;
     }
