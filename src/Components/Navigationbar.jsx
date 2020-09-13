@@ -9,7 +9,7 @@ import {
   NavbarBrand,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faTv } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faTv,faAtom,faDraftingCompass,faStarOfLife,faCompass,faFlag } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navigationbar() {
@@ -54,11 +54,21 @@ export default function Navigationbar() {
               <FontAwesomeIcon icon={faTv} className="menu-item-icon" />
               DASHBOARD
             </Col>
-            <Col className="menu-item">WIDGETS</Col>
-            <Col className="menu-item">UI ELEMENTS</Col>
-            <Col className="menu-item">PAGES</Col>
-            <Col className="menu-item">FORMS</Col>
-            <Col className="menu-item">APPS</Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faCompass} className="menuIcon" />
+              WIDGETS</Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faAtom} className="menuIcon" />
+              UI ELEMENTS</Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faFlag} className="menuIcon" />
+              PAGES</Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faDraftingCompass} className="menuIcon" />
+              FORMS</Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faStarOfLife} className="menuIcon" />
+              APPS</Col>
         </Row>
         <br/>
       </Container>
