@@ -1,0 +1,85 @@
+.Chart{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+.updateChart{
+    padding-left:1.2%;
+}
+.currentChart{
+    width:620px;
+    height:450px;
+}
+.cardText{
+    display:flex;
+    justify-content:flex-start;
+    font-weight:bold;
+    font-size:20px;
+    color:#444F73;
+}
+.updates{
+    width:620px;
+    height:450px;
+}
+.chartCard{
+    padding:35px 18px 15px 18px;
+}
+.project{
+    color:grey;
+}
+.projectStatus{
+    display:flex;
+    flex-direction:column;
+}
+.projectDigit{
+    font-weight:bold;
+    font-size:50px;
+    color:#444F73;
+}
+.pcsDiv{
+    display:flex;
+    flex-direction:row;
+}
+.pcs{
+   margin-top:6%;
+}
+.updateInfo{
+    display:flex;
+    flex-direction:row;
+}
+.dotstyle{
+     font-size:35px;
+     font-weight: bolder;
+     color: #464DE4;
+     position: relative;
+     top: 1em;
+     padding-right: 30px;
+ }
+ .linesss{
+    border-left: 2px solid #D5DCEC;
+    border-width: medium;
+    position: relative;
+    height: 53px;
+    top: 2.5em;
+    left: 10px;
+ }
+ .userConfirmation{
+    color:#444F73;
+    font-size:18px;
+    font-weight: bold;
+    margin-top:7%;
+ }
+ .evaluation{
+    color:#444F73;
+    font-size:18px;
+    font-weight: bold;
+    margin-top:4.5%;
+ }
+ .userUpdate{
+    font-size:14px;
+    margin-top:1%;
+    color:#444F73;
+ }
+ .alert{
+    color:grey;
+ }
