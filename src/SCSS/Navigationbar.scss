@@ -20,6 +20,7 @@
 }
 .logoBar{
     @include flex();
+    justify-content:space-between;
     .logo{
         height:30px;
         width:160px;
@@ -27,7 +28,6 @@
 }
 .logoBar-icons{
     @include flex();
-    padding-left:60%;
     .search{
         padding-top:7px;
         padding-right:20px;

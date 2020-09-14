@@ -1,6 +1,5 @@
 @mixin flex() {
 	display:flex;
-    //align-items:center;
     justify-content:center;
 }
 .Chart{
@@ -99,4 +98,8 @@
     @include flex();
     align-items:center;
     width:300px;
+}
+
+@media screen and (max-width: 1024px) {
+	
 }

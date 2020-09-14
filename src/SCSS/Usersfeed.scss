@@ -11,14 +11,14 @@
         align-items: center;
         justify-content:center;
         background-color:white;
-        width:313px;
+        width:100%;
+        max-width:313px;
         height:130px;
         border: 1px solid #D5DCEC;
     }
     .icons{
         height:40px;
         width:50px;
-        
     }
     .users{
         display: flex;
@@ -29,5 +29,15 @@
         font-size:26px;
         font-weight:bold;
         color:#3B466C;
+    }
+}
+.firstFeed{
+    display:flex;
+    flex-direction:row;
+}
+
+@media screen and (max-width: 414px) {
+	.feedColumn{
+
     }
 }
