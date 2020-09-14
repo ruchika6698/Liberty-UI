@@ -1,0 +1,64 @@
+.ManageTicket{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.manageCard{
+    width:100%;
+    max-width:1210px;
+    height:400px;
+    padding:35px 25px 15px 25px;
+}
+.ticketText{
+    color:#444F73;
+    font-size:20px;
+    font-weight:bold;
+}
+.avatarImage{
+    border-radius:50px;
+}
+.ticket{
+    color:#444F73;
+    font-size:16px;
+    font-weight:bold;
+}
+.ticketMessage{
+    color:#444F73;
+    font-size:16px;
+}
+.userDetail{
+    display:flex;
+    flex-direction:row;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+.userTicket{
+    margin-left:4%;
+    width:100%;
+    max-width:800px;
+}
+.status{
+    display:flex;
+    flex-direction:row;
+    color:grey;
+    margin-top:1%;
+
+    .dueIn{
+        padding-left:10%;
+    }
+}
+.manageButton{
+    margin-left:10%;
+    background-color:#464DE4;
+    color:white;
+    font-size:16px;
+    height:40px;
+    border-radius:5px;
+    padding:5px 20px 5px 20px;
+}
+
+@media screen and (max-width: 414px) {
+	.feedColumn{
+
+    }
+}
