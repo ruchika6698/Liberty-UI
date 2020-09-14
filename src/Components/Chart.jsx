@@ -17,7 +17,7 @@ export default function Usersfeed() {
                     <br/>
                     <span className="paragraph">Lorem ipsum dolor sit amet, consectetuer</span>
                     <span className="paragraph">adipiscing elit. Aenean commodo ligula eget dolor.</span>
-                    <span className="paragraph">Lorem</span>
+                    <span >Lorem</span>
                     <br/>
                     <Button className="button">Follow</Button>{' '}
                     <br/>
