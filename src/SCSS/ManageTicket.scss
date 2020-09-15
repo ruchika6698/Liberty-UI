@@ -57,8 +57,63 @@
     padding:5px 20px 5px 20px;
 }
 
+@media screen and (max-width: 1024px) {
+	.manageCard{
+        width:850px;
+    }
+}
+@media screen and (max-width: 768px) {
+	.manageCard{
+        width:620px;
+        height:auto;
+    }
+}
+@media screen and (max-width: 540px) {
+	.manageCard{
+        width:440px ;
+    }
+    .avatarImage{
+        width:50px !important;
+        height:50px;
+        border-radius:50px;
+    }
+    .userTicket{
+        margin-top:4%;
+    }
+    .userDetail{
+        display:flex;
+        flex-direction:column;
+    }
+    .manageButton{
+        margin-left:2%;
+        width:100px;
+    }
+    .status{
+        opacity:0;
+    }
+}
 @media screen and (max-width: 414px) {
-	.feedColumn{
-
+    .manageCard{
+        width:340px !important;
+    }
+}
+@media screen and (max-width: 375px) {
+    .manageCard{
+        width:310px !important;
+    }
+}
+@media screen and (max-width: 360px) {
+    .manageCard{
+        width:290px !important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .manageCard{
+        width:250px !important;
+    }
+}
+@media screen and (max-width: 280px) {
+    .manageCard{
+        width:220px !important;
     }
 }

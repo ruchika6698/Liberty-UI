@@ -83,3 +83,68 @@
  .alert{
     color:grey;
  }
+ 
+@media screen and (max-width: 1024px) {
+    .currentChart{
+        width:440px;
+    }
+    .updates{
+        width:440px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .currentChart{
+        width:330px;
+    }
+    .updates{
+        width:330px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .currentChart{
+        width:490px;
+    }
+    .updates{
+        width:490px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .currentChart{
+        width:390px;
+    }
+    .updates{
+        width:390px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .currentChart{
+        width:360px;
+    }
+    .updates{
+        width:360px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .currentChart{
+        width:340px;
+    }
+    .updates{
+        width:340px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .currentChart{
+        width:300px;
+    }
+    .updates{
+        width:300px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .currentChart{
+        width:270px;
+    }
+    .updates{
+        width:270px;
+    }
+}

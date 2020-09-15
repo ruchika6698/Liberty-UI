@@ -11,7 +11,14 @@
     font-weight:bold;
     width:190px;
 }
-
+.menuBar{
+    opacity:0;
+}
+.miniLogo{
+    opacity:0;
+    height:0px;
+    width:0px;
+}
 .Navigationbar{
     display:flex;
     align-items:center;
@@ -21,6 +28,7 @@
 .logoBar{
     @include flex();
     justify-content:space-between;
+    
     .logo{
         height:30px;
         width:160px;
@@ -66,7 +74,7 @@
 }
 .menu{
     @include flex();
-    max-width:1500px;
+    
     .dashboard{
         @include header();
         background-color: #734ef9;
@@ -87,5 +95,80 @@
     .menuIcon{
         color: #564DE4;
         margin-right: 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .Navigationbar{
+        margin-top:4%;
+    }
+    .dashboard{
+        width:120px;
+    }
+    .menu-item{
+        width:120px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .Navigationbar{
+        margin-top:4%;
+    }
+    .dashboard{
+        width:70px;
+    }
+    .menu-item{
+        width:70px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .menu{
+        display:none;
+    }
+    .logoBar{
+        width:470px;
+    }
+    .logo{
+        display:none;
+    }
+    .menuIcon{
+        display:visible;
+        height:0px;
+        width:0px;
+    }
+    .searchInput{
+        padding-left:0px;
+        padding-right:0px;
+        width:80px;
+    }
+    .miniLogo{
+        opacity:1;
+        height:40px;
+        width:100px;
+    }
+    .menuBar{
+        opacity:0.8;
+        margin-top:2%;
+    }
+    .notification{
+        padding:0px 4px 0px 4px !important;
+    }
+}
+@media screen and (max-width:414px) {
+    .logoBar{
+        width:390px;
+    }
+}
+@media screen and (max-width:360px) {
+    .logoBar{
+        width:350px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .logoBar{
+        width:300px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .logoBar{
+        width:280px;
     }
 }

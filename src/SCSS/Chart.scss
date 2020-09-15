@@ -41,12 +41,13 @@
 }
 .paragraph{
     color:#444F73;
+    word-wrap: break-word;
 }
 .button{
     padding:10px 20px 10px 20px;
     font-weight:bold;
     color:white;
-    background-color:#252DDF;
+    background-color:#464DE4;
     border-radius:5px;
 }
 .details{
@@ -56,6 +57,8 @@
 .digit{
     display:flex;
     flex-direction:row;
+    justify-content:center;
+    align-items:center;
     margin-top:2%;
 }
 .firstRow{
@@ -68,6 +71,7 @@
 .secondRow{
     @include flex();
     width:100px;
+    word-wrap: break-word;
 }
 .graphCard{
     padding:35px 19px 15px 18px;
@@ -101,5 +105,65 @@
 }
 
 @media screen and (max-width: 1024px) {
-	
+	.card{
+        width:291px;
+    }
+}
+@media screen and (max-width: 768px) {
+	.card{
+        width:215px;
+    }
+    .firstRow{
+        width:50px;
+    }
+    .secondRow{
+        width:50px;
+    }
+}
+@media screen and (max-width: 540px) {
+	.Chart{
+        display:flex;
+        flex-direction:Column !important;
+        align-items:center;
+    }
+    .card{
+        width:490px;
+        margin-top:5%;
+    }
+    .firstRow{
+        width:100px;
+    }
+    .secondRow{
+        width:100px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .card{
+        width:390px;
+        margin-top:5%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .card{
+        width:360px;
+        margin-top:5%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .card{
+        width:340px;
+        margin-top:5%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .card{
+        width:305px;
+        margin-top:5%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .card{
+        width:270px;
+        margin-top:5%;
+    }
 }

@@ -16,3 +16,12 @@
         padding-left:5px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .copyright{
+        margin-left:3%;
+    }
+    .footerText{
+        padding-right:10px !important;
+    }
+}
