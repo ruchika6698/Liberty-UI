@@ -1,6 +1,7 @@
 import React from "react";
 import "../SCSS/Navigationbar.scss";
 import LibertyIcon from "./../Assets/LibertyIcon.svg";
+import MiniLogo from "./../Assets/MiniLogo.svg";
 import UserIcon from "./../Assets/UserIcon.jpg";
 import {
   Container,
@@ -9,7 +10,7 @@ import {
   NavbarBrand,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faTv,faAtom,faDraftingCompass,faStarOfLife,faCompass,faFlag } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faTv,faAtom,faDraftingCompass,faStarOfLife,faCompass,faFlag,faBars } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navigationbar() {
@@ -26,7 +27,13 @@ export default function Navigationbar() {
                   src={LibertyIcon}
                   alt="logo"
                 />
+                <img
+                  className="miniLogo"
+                  src={MiniLogo}
+                  alt="logo"
+                />
           </NavbarBrand>
+
         </Col>
         <Col className="logoBar-icons">
               <div className="search">
@@ -44,7 +51,9 @@ export default function Navigationbar() {
               </div>
               <div className="account">
                 <img src={UserIcon} height="37px" className="avatar" alt="User" />
-
+              </div>
+              <div className="menuBar">
+                <FontAwesomeIcon icon={faBars} />
               </div>
             </Col>
         </Row>

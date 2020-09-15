@@ -9,6 +9,7 @@ export default function Usersfeed() {
 
   return (
     <div className="userfeed">
+        <div className="firstFeed">
         <div className="feedColumn">
             <img
                 className="icons"
@@ -40,7 +41,9 @@ export default function Usersfeed() {
                 </div>
             </div>
         </div>
+        </div>
 
+        <div className="firstFeed">
         <div className="feedColumn">
             <img
                 className="icons"
@@ -71,6 +74,7 @@ export default function Usersfeed() {
                  61,119
                 </div>
             </div>
+        </div>
         </div>
     </div>
   )

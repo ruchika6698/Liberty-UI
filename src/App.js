@@ -27,7 +27,7 @@ class App extends Component {
           <ManageTicket/>
           <br/>
           <br/>
-          <hr width="72%" color="#D5DCEC"/>
+          <hr width="90%" color="#D5DCEC"/>
           <Footer/>
           <br/>
           <br/>

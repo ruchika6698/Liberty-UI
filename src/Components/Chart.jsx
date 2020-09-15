@@ -48,7 +48,9 @@ export default function Usersfeed() {
                     <div className="product">Support Cases</div>
                     <div className="value">323,360</div>
                     <div >2.5% change from yesterday</div>
-
+                    <div>
+                    
+                    </div>
                 </div>
             </Card>
         </div>
