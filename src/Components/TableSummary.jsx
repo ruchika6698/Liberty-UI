@@ -6,7 +6,6 @@ export default function TableSummary() {
   return (
     <div className="tableContainer">
       <table>
-        <thead>
           <tr className="tableHead">
             <th>ID</th>
             <th>Assignee</th>
@@ -16,8 +15,7 @@ export default function TableSummary() {
             <th>Amount</th>
             <th>Tracking Number</th>
           </tr>
-        </thead>
-        <tbody>
+    
           <tr>
             <td>#320</td>
             <td>Mark C.Diaz</td>
@@ -62,7 +60,6 @@ export default function TableSummary() {
             <td>$12,245</td>
             <td>JPABT435893678</td>
           </tr>
-        </tbody>
       </table>
     </div>
   );
