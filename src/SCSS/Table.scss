@@ -7,6 +7,7 @@ table {
 .tableContainer{
   display:flex;
   justify-content:center;
+  overflow-x:scroll;
 }
 td, th {
   border: 1px  solid #dddddd;
@@ -26,16 +27,19 @@ th {
 }
 .approved{
   background-color:#4CCEAC;
+  border-color:#4CCEAC;
   color:white;
   border-radius:5px;
 }
 .pending{
   background-color:#FF6F59;
+  border-color:#FF6F59;
   color:white;
   border-radius:5px;
 }
 .danger{
   background-color:#DB504A;
+  border-color:#DB504A;
   color:white;
   border-radius:5px;
 }
@@ -47,10 +51,47 @@ th {
 }
 @media screen and (max-width: 786px) {
   table{
-    width:500px !important;
+    width:600px !important;
   }
   td, th {
     padding-top: 12px;
     padding: 12px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .tableContainer{
+    padding-left:170px;
+    padding-right:5px;
+    margin-left:5%;
+    margin-right:5%;
+  }
+  td, th {
+    padding-top: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .tableContainer{
+    padding-left:280px;
+  }
+}
+@media screen and (max-width: 411px) {
+  .tableContainer{
+    padding-left:280px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .tableContainer{
+    padding-left:310px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .tableContainer{
+    padding-left:320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tableContainer{
+    padding-left:320px;
   }
 }

@@ -6,7 +6,6 @@ import Chart from './Components/Chart'
 import TableSummary from './Components/TableSummary'
 import UpdateChart from './Components/UpdateChart'
 import ManageTicket from './Components/ManageTicket'
-import Footer from './Components/Footer'
 
 class App extends Component {
   render() {
@@ -27,8 +26,6 @@ class App extends Component {
           <ManageTicket/>
           <br/>
           <br/>
-          <hr width="90%" color="#D5DCEC"/>
-          <Footer/>
           <br/>
           <br/>
         </div>
