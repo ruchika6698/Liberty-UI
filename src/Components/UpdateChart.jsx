@@ -4,9 +4,11 @@ import Card from "react-bootstrap/Card";
 import clock from "./../Assets/clock.png";
 import {Bar} from 'react-chartjs-2'
 
-export default function UpdateChart() {
+export default function UpdateChart(props) {
 
   const arbitraryStackKey = "stack1"
+  const stackeone=props.ChartRowData.stackOne
+  const stacktwo=props.ChartRowData.stackTwo
         const data = {
             labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
             datasets:[
@@ -26,12 +28,22 @@ export default function UpdateChart() {
                 {
                   stack: arbitraryStackKey,
                   label: 'data1',
-                  data: [4.5,4,7,3,5,1,4.5],
+                  data: stackeone,
                   borderColor:['black'],
                   borderWidth:['thin'],
                
                   pointBackgroundColor:['#D9E1FD'],
                   pointBorderColor:['white']
+                },
+                {
+                    stack: arbitraryStackKey,
+                    label: 'data1',
+                    data:stacktwo,
+                    borderColor:['black'],
+                    borderWidth:['thin'],
+               
+                    pointBackgroundColor:['#D9E1FD'],
+                    pointBorderColor:['white']
                 }
             ]
         }
@@ -83,7 +95,7 @@ const option={
               <span className="project">Projects Status</span>
               <div className="pcsDiv">
                 {" "}
-                <span className="projectDigit">76,533</span>
+                <span className="projectDigit">{props.ChartRowData.projectStatus}</span>
                 <span className="pcs">PCS</span>
               </div>
             </div>
@@ -104,17 +116,15 @@ const option={
                 <div className="linesss"></div>
               </div>
               <div>
-                <div className="userConfirmation">User confirmation</div>
-                <div className="userUpdate">Donec rutrum congue leo eget malesuada.</div>
-                <div className="alert"><img src={clock} height="20px" alt="clock" /> 7 months ago.</div>
-                <br/>
-                <div className="evaluation">Continuous evaluation</div>
-                <div className="userUpdate">Vivamus suscipit tortor eget felis porttitor volutpat.</div>
-                <div className="alert"><img src={clock} height="20px" alt="clock" /> 7 months ago.</div>
-                <br/>
-                <div className="evaluation">Promotion</div>
-                <div className="userUpdate">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</div>
-                <div className="alert"><img src={clock} height="20px" alt="clock" /> 7 months ago.</div>
+              {props.timeline.map((timeline, index) => {
+              return (
+                <div key={index}>
+                  <div className="userConfirmation"> {timeline.subject}</div>
+                  <div className="userUpdate">{timeline.description}</div>
+                  <div className="alert"><img src={clock} height="20px" alt="clock" className="clock"/>{timeline.time}</div>
+                </div>
+              );
+              })}
               </div>
             </div>
           </div>

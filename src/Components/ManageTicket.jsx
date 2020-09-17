@@ -6,7 +6,8 @@ import UserIcon from "./../Assets/UserIcon.jpg";
 import Stella from "./../Assets/Stella.jpg";
 import John from "./../Assets/John.jpg";
 
-export default function UpdateChart() {
+export default function UpdateChart(props) {
+    
   return (
     <div className="ManageTicket">
         <Card className="manageCard">
@@ -16,11 +17,11 @@ export default function UpdateChart() {
                 <br/>
                 <img src={UserIcon} height="50px" className="avatarImage" alt="User" />
                 <div className="userTicket">
-                    <div className="ticket">James : [#23047] Donec rutrum congue leo eget malesuada.</div>
-                    <div className="ticketMessage">Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.</div>
+                    <div className="ticket">{props.JamesticketData.ticketSubject}</div>
+                    <div className="ticketMessage">{props.JamesticketData.ticketDescription}</div>
                     <div className="status">
-                        <span>Last responded :3 hours ago</span>
-                        <span className="dueIn">Due in : 2 Days</span>
+                        <span>Last responded :{props.JamesticketData.lastResponded}</span>
+                        <span className="dueIn">Due in :{props.JamesticketData.due}</span>
                     </div>
                 </div>
                 <Button className="manageButton">Manage</Button>{' '}
@@ -30,11 +31,11 @@ export default function UpdateChart() {
                 <br/>
                 <img src={Stella} height="50px" className="avatarImage" alt="User" />
                 <div className="userTicket">
-                    <div className="ticket">Stella : [#23135] Curabitur aliquet quam id dui posuere blandit.</div>
-                    <div className="ticketMessage">Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl.</div>
+                    <div className="ticket">{props.StellaticketData.ticketSubject}</div>
+                    <div className="ticketMessage">{props.StellaticketData.ticketDescription}</div>
                     <div className="status">
-                        <span>Last responded : 3 hours ago</span>
-                        <span className="dueIn">Due in : 2 Days</span>
+                        <span>Last responded :{props.StellaticketData.lastResponded}</span>
+                        <span className="dueIn">Due in :{props.StellaticketData.due}</span>
                     </div>
                 </div>
                 <Button className="manageButton">Manage</Button>{' '}
@@ -44,11 +45,11 @@ export default function UpdateChart() {
                 <br/>
                 <img src={John} height="50px" className="avatarImage" alt="User" />
                 <div className="userTicket">
-                    <div className="ticket">John Doe : [#23246] Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.</div>
-                    <div className="ticketMessage">Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.</div>
+                    <div className="ticket">{props.JohnJamesticketData.ticketSubject}</div>
+                    <div className="ticketMessage">{props.JohnJamesticketData.ticketDescription}</div>
                     <div className="status">
-                        <span>Last responded : 3 hours ago</span>
-                        <span className="dueIn">Due in : 2 Days</span>
+                        <span>Last responded :{props.JohnJamesticketData.lastResponded}</span>
+                        <span className="dueIn">Due in :{props.JohnJamesticketData.due}</span>
                     </div>
                 </div>
                 <Button className="manageButton">Manage</Button>{' '}

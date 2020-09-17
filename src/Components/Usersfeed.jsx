@@ -5,7 +5,7 @@ import newFeedback from "./../Assets/newFeedback.png";
 import Employees from "./../Assets/Employees.png";
 import TotalSales from "./../Assets/TotalSales.png";
 
-export default function Usersfeed() {
+export default function Usersfeed(props) {
 
   return (
     <div className="userfeed">
@@ -21,7 +21,7 @@ export default function Usersfeed() {
                  New Users
                 </div>
                 <div className="data">
-                 65,650
+                 {props.summaryData.newUsers}
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@ export default function Usersfeed() {
                  New Feedbacks
                 </div>
                 <div className="data">
-                 32,604
+                 {props.summaryData.newFeedbacks}
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ export default function Usersfeed() {
                  Employees
                 </div>
                 <div className="data">
-                 17,583
+                 {props.summaryData.employees}
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@ export default function Usersfeed() {
                  Total Sales
                 </div>
                 <div className="data">
-                 61,119
+                 {props.summaryData.totalSales}
                 </div>
             </div>
         </div>
