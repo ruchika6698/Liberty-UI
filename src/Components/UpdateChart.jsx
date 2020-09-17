@@ -85,7 +85,7 @@ const option={
         <Card className="currentChart">
           <div className="chartCard">
             <div className="cardText">The Current Chart</div>
-            <div >
+            <div className="graphbar">
                 <Bar data={data} options={option}  height="100px" style={{width:'100%'}}/>
   
             </div>
