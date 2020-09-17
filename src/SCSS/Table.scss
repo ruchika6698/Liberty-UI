@@ -26,22 +26,18 @@ th {
   border-color: #F3F5F6;
 }
 .approved{
-  background-color:#4CCEAC;
-  border-color:#4CCEAC;
-  color:white;
-  border-radius:5px;
-}
-.pending{
-  background-color:#FF6F59;
-  border-color:#FF6F59;
-  color:white;
-  border-radius:5px;
+  background-color: #4CCEAC;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  width:70px
 }
 .danger{
-  background-color:#DB504A;
-  border-color:#DB504A;
-  color:white;
-  border-radius:5px;
+  background-color: #DB504A;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  width:58px
 }
 
 @media screen and (max-width: 1024px) {
@@ -73,6 +69,7 @@ th {
 @media screen and (max-width: 414px) {
   .tableContainer{
     padding-left:280px;
+    margin-left:3%;
   }
 }
 @media screen and (max-width: 411px) {

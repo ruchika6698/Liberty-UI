@@ -1,0 +1,159 @@
+{
+  "data": {
+    "summary": {
+      "newUsers": "65,650",
+      "newFeedbacks": "32,602",
+      "employees": "17,583",
+      "totalSales": "61,119"
+    },
+    "employeeInfo": {
+      "name": "Maria Johonson",
+      "avatar": "developer-image.jpg",
+      "position": "Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem",
+      "postsMade": 5890,
+      "followers": 1596,
+      "likes": 7894
+    },
+    "productSupport": {
+      "topProducts": "5,98496",
+      "topProductPercentageChange": "6.5% Change From Today",
+      "supportCases": "3,23360",
+      "supportCasesPercentageChange": "2.5% Change From Yesterday",
+      "TodaysGraph": [
+            1,
+            2,
+            1,
+            2.5,
+            3.5,
+            3,
+            4
+        ],
+        "yesterdayGraph": [
+            3,
+            5,
+            4,
+            6,
+            8,
+            7,
+            8.5
+        ]
+    },
+    "sales": {
+      "totalSales": 6256,
+      "openCampaign": 8569,
+      "salesfirstGraph": [
+            50,
+            75,
+            27,
+            30,
+            63,
+            76
+        ],
+        "salesSecondGraph": [
+            0,
+            78,
+            10,
+            50,
+            100,
+            62
+        ],
+      "onlineSales": 5136,
+      "storeSales": 4596
+    },
+    "TableData": [
+        {
+            "ID": "#320",
+            "Assignee": "Mark C.Diaz",
+            "TaskDetails": "Support of thteme",
+            "PaymentMethod": "Credit card",
+            "PaymentStatus": "Approved",
+            "Amount": "$12,245",
+            "TrackingNumber": "JPBBN435893458"
+        },
+        {
+            "ID": "#321",
+            "Assignee": "Jose D",
+            "TaskDetails": "Verify your email address",
+            "PaymentMethod": "Internet banking",
+            "PaymentStatus": "Pending",
+            "Amount": "$12,245",
+            "TrackingNumber": "BDYBN435893325"
+        },
+        {
+            "ID": " #322",
+            "Assignee": "Philips T",
+            "TaskDetails": "Item support message send",
+            "PaymentMethod": "Credit card",
+            "PaymentStatus": "Approved",
+            "Amount": "$12,245",
+            "TrackingNumber": "JSNTN435884258"
+        },
+        {
+            "ID": "#323",
+            "Assignee": "Luke Pixel",
+            "TaskDetails": "New submission on website",
+            "PaymentMethod": "Cash on delivery",
+            "PaymentStatus": "Rejected",
+            "Amount": "$12,245",
+            "TrackingNumber": "JPABT435893678"
+        }
+    ],
+    "JamesticketData": {
+        "ticketSubject": "James #[23047] Donec rutrum congue leo eget malesuada.",
+        "ticketDescription": "Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+    },
+    "StellaticketData": {
+        "ticketSubject": "Stella #[23135] Curabitur aliquet quam id dui posuere blandit.",
+        "ticketDescription": "Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+    },
+    "JohnJamesticketData": {
+        "ticketSubject": "John Doe #[23246] Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.",
+        "ticketDescription": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+    },
+    "timelineData": [
+      {
+        "subject": "User confirmation",
+        "description": "Donec rutrum congue leo eget malesuada.",
+        "time": "7 months ago."
+      },
+      {
+        "subject": "Continuous evaluation",
+        "description": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+        "time": "7 months ago."
+      },
+      {
+        "subject": "Promotion",
+        "description": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+        "time": "7 months ago."
+      }
+    ],
+    "ChartRowData": {
+        "stackOne": [
+            3.5,
+            4,
+            1,
+            5,
+            3,
+            7,
+            3.5
+        ],
+        "stackTwo": [
+            4.5,
+            4,
+            9,
+            3,
+            5,
+            1,
+            4.5
+        ],
+        "projectStatus": "76,533"
+    }
+  }
+}

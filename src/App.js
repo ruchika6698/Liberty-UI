@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Navigationbar from './Components/Navigationbar'
 import Usersfeed from './Components/Usersfeed'
@@ -6,24 +6,30 @@ import Chart from './Components/Chart'
 import TableSummary from './Components/TableSummary'
 import UpdateChart from './Components/UpdateChart'
 import ManageTicket from './Components/ManageTicket'
+import { connect } from "react-redux";
 
-class App extends Component {
-  render() {
+function App(props) {
     return (
       <div>
         <div className="navigationBar">
           <Navigationbar/>
         </div>
         <div className="liberty">
-          <Usersfeed/>
+          <Usersfeed summaryData={props.summary}/>
           <br/>
-          <Chart/>
+          <Chart 
+            employee={props.employeeInfo}
+            productSupport={props.productSupport}
+            sales={props.sales}
+          />
           <br/>
-          <TableSummary/>
+          <TableSummary tasks={props.TableData}/>
           <br/>
-          <UpdateChart/>
+          <UpdateChart
+            timeline={props.timelineData} ChartRowData={props.ChartRowData}
+          />
           <br/>
-          <ManageTicket/>
+          <ManageTicket JamesticketData={props.JamesticketData} StellaticketData={props.StellaticketData} JohnJamesticketData={props.JohnJamesticketData}/>
           <br/>
           <br/>
           <br/>
@@ -32,6 +38,11 @@ class App extends Component {
         
       </div>
     );
-  }
 }
-export default App;
+function mapStateToProps(state) {
+  return {
+    ...state.dashbaord.data,
+  };
+}
+
+export default connect(mapStateToProps)(App);
